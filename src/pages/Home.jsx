@@ -1,16 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '../components/Header';
 
 const Home = () => {
+    const [isDark, setDark] = useState(false);
+    const moodImage = isDark ? '/lucide_sun.svg' : '/solar_moon-line-duotone.svg';
+
+    const moodButton = () => {
+        setDark((prev) => !prev);
+    };
+
     return (
-        <div>
-            <Header />
-            <h2 className='font-bold text-hero-heading'>Home Page</h2>
-            <h2 className='font-bold text-section-heading'>Home Page</h2>
-            <h3 className='font-bold text-section-title'>Home Page</h3>
-            <h3 className='font-bold text-card-title'>Home Page</h3>
-            <h3 className='section-small-heading'>Home Page</h3>
-        </div>
+        <main className={isDark ? 'dark' : ''}>
+            <Header moodButton={moodButton} moodImage={moodImage} />
+            <section className='dark:bg-dark-body w-full h-[100vh]'>
+       
+            </section>
+
+        
+        </main>
     );
 };
 
