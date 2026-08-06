@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
-const MobileMenu = () => {
+const MobileMenu = ({ moodButton, moodImage, isDark }) => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
 
     const navLinkClass = ({ isActive }) => {
@@ -37,6 +37,14 @@ const MobileMenu = () => {
                     <NavLink to='/about' className={navLinkClass}>About</NavLink>
                     <NavLink to='/contact' className={navLinkClass}>Contact</NavLink>
                 </nav>
+                <button
+                    className='w-[40px] h-[40px] bg-primary-color hover:bg-secondary-color rounded-full flex items-center justify-center z-10 mood-button hover:shadow-gray-700 shadow-lg shadow-gray-600' 
+                    onClick={moodButton}
+                    aria-pressed={isDark}
+                    aria-label='Toggle dark mode'
+                    type='button'>
+                    <img src={moodImage || '/solar_moon-line-duotone.svg'} alt='theme icon' className='m-auto' />
+                </button>
             </div>
         </div>
     );
