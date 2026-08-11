@@ -28,7 +28,7 @@ const Hero = (p) => {
                          ): null}
                          
                     </div>
-                    <div className='md:w-[70%]  w-full mb-10'>
+                    <div className='md:w-[70%]  w-full'>
                          <span className='text-section-small-heading text-secondary-color uppercase tracking-widest font-semibold'>{p.heroSection['hero_small_title']}</span>
 
                          <h1 className='text-hero-heading font-bold leading-tight text-light-body'>
