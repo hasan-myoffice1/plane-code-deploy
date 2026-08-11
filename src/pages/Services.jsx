@@ -16,7 +16,7 @@ const Services = () => {
 
     return (
         <main className='bg-light-body dark:bg-dark-body'>
-            <Hero homeHeroSection={homeHeroSection} />
+            <Hero heroSection={homeHeroSection} />
             <section className='w-screen h-screen  bg-light-body dark:bg-dark-body'>
             </section>
         </main>

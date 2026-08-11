@@ -4,42 +4,43 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
+    /* Colors */
     --color-primary-color: #1A73E8;
     --color-secondary-color: #279947;
     --color-third-color: #DF372B;
+
     --color-dark-body: #1B1E24;
     --color-dark-section: #242831;
     --color-light-body: #EBECF0;
     --color-light-section: #FFFFFF;
-    --color-light-heading: #F6F7F9;
-    --color-dark-heading: #202124;
+   
     --color-highlight-pri: linear-gradient(90deg, #1A73E8 0%, #E8F0FE 100%);
     --color-highlight-sec: linear-gradient(270deg, #FFF 0%, #279947 54.81%);
-
+    /* Font size */
     --text-hero-heading: clamp(2rem, 1rem + 2.5vw, 4rem); 
-    --text-section-heading: clamp(1.25rem, 1rem + 1.25vw, 2.25rem); 
+    --text-section-heading: clamp(1.25rem, 1.3rem + 1.25vw, 2.25rem); 
     --text-section-small-heading: clamp(0.7rem, 0.9rem, 1rem);
     --text-section-title: clamp(1.125rem, 1rem + 0.75vw, 1.75rem); 
     --text-card-title: clamp(1rem, 0.95rem + 0.5vw, 1.375rem);
-    
+    /* width */
     --width-container-max: 1200px;
+    /* font family */
     --font-family-primary: "Open Sans", sans-serif;
 }
 
 @layer components { 
     * {
-        @apply font-family-primary transition-all ;
+        @apply font-family-primary transition-all text-pretty;
     }
 
+    p {
+        @apply text-base/8;
+    }
     .container {
-        @apply max-w-[var(--width-container-max)] mx-auto px-4 py-15 m-auto flex flex-col justify-between h-[80vh];
+        @apply max-w-[var(--width-container-max)] mx-auto px-4 py-15 m-auto ;
     }
     .button-primary {
         @apply text-amber-50 bg-primary-color px-7 py-3 rounded-full border-b-2 border-gray-600 dark:border-gray-200 hover:bg-secondary-color hover:shadow-md transition-all ;
-    }
-
-    .top-small-heading {
-        @apply text-section-small-heading text-secondary-color uppercase tracking-widest;
     }
     .highlight-text-pri {
         @apply bg-gradient-to-r from-primary-color to-[#E8F0FE] bg-clip-text text-transparent;

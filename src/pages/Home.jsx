@@ -1,6 +1,8 @@
 import React from 'react';
 import Hero from '../components/Hero';
-// import Header from '../components/Header';
+import TitleAndDesc from '../components/TitleAndDesc';
+import NumberCount from '../components/NumberCount';
+
 
 const Home = () => {
    
@@ -16,11 +18,30 @@ const Home = () => {
         hero_bg_uri:'/src/assets/homepageHero.png'
     }    
 
+    const homeAboutSection = {
+        small_title:'About Company',
+        section_title:'We create modern websites and scalable digital solutions',
+        desc:'Your website is more than an online presence—it is your most valuable digital asset. At PlanCodeDeploy, we build custom websites, business platforms, and web applications that combine exceptional design with reliable technology. Every project is developed with performance, security, scalability, and long-term business growth in mind, helping companies establish a stronger digital presence and deliver better customer experiences.',
+    }
+
     return (
         <main className='bg-light-body dark:bg-dark-body'>
-            <Hero homeHeroSection={homeHeroSection} />
+            <Hero heroSection={homeHeroSection} />
 
-            <section className='w-screen h-screen  bg-light-body dark:bg-dark-body'>
+            <section className=' bg-light-body dark:bg-dark-body container'>
+                <div>
+                    <p>Trusted by leading companies</p>
+                </div>
+            </section>
+
+            <section className='bg-light-body dark:bg-dark-body container'>
+                 <TitleAndDesc SectionData={homeAboutSection} />
+                 <div className='flex flex-wrap gap-10 pt-10'>
+                    <NumberCount end={37} text={'Projects Successfully Delivered'}/>
+                    <NumberCount end={9} text={'Years of Industry Experience'} />
+                    <NumberCount end={12} text={'Businesses Worldwide Served'} />
+                 </div>
+                 
             </section>
         </main>
     );

@@ -29,17 +29,10 @@ const Header = ({ moodButton, moodImage, isDark }) => {
         </div>
 
         <div className='flex items-center gap-4'>
-          {/* <button className='button-primary hidden md:block'>Free Quote</button> */}
+          <button className='button-primary hidden md:block'>Free Quote</button>
 
           {/* ------ Mood Changing BUTTON */}
-          <button
-            className='w-[40px] h-[40px] bg-primary-color hover:bg-secondary-color rounded-full flex items-center justify-center z-10  hover:shadow-gray-700 shadow-lg shadow-gray-600 hidden md:block' 
-            onClick={moodButton}
-            aria-pressed={isDark}
-            aria-label='Toggle dark mode'
-            type='button'>
-              <img src={moodImage || '/solar_moon-line-duotone.svg'} alt='theme icon' className='m-auto' />
-          </button>
+          
           
           {/* ---- Sidebar Menu Button */}
           <button
@@ -79,6 +72,14 @@ const Header = ({ moodButton, moodImage, isDark }) => {
               <img src={moodImage || '/solar_moon-line-duotone.svg'} alt='theme icon' className='m-auto' />
           </button>
       </div>
+
+      <button className='w-[40px] h-[40px] bg-primary-color hover:bg-secondary-color rounded-full flex items-center justify-center z-10  hover:shadow-gray-700 shadow-lg shadow-gray-600 hidden md:block fixed bottom-10 right-10' 
+        onClick={moodButton}
+        aria-pressed={isDark}
+        aria-label='Toggle dark mode'
+        type='button'>
+          <img src={moodImage || '/solar_moon-line-duotone.svg'} alt='theme icon' className='m-auto' />
+      </button>
       
     </header>
   );
