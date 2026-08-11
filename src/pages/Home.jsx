@@ -1,18 +1,26 @@
 import React from 'react';
+import Hero from '../components/Hero';
 // import Header from '../components/Header';
 
 const Home = () => {
-    // ----------------------------------------------------------------------------| Light and Dark Mood Code 
-    // const [isDark, setDark] = useState(false);
-    // const moodImage = isDark ? '/lucide_sun.svg' : '/solar_moon-line-duotone.svg';
+   
 
-    // const moodButton = () => {
-    //     setDark((prev) => !prev);
-    // };
-   // ----------------------------------------------------------------------------| 
+    const homeHeroSection = {
+        hero_section_heading_f:'Web Development Helps for ',
+        hero_highlight_text :'Your business.',
+        hero_small_title:'Web Development Agency',
+        hero_desc:'',
+        hero_button_text:'Explore Our Services',
+        phone:'+088 16456445246 ',
+        email:'PlanCodeDeploy@gmail.com',
+        hero_bg_uri:'/src/assets/homepageHero.png'
+    }    
+
     return (
-        <main>
-            <section className='min-h-screen bg-white text-gray-900 dark:bg-[#1B1E24] dark:text-[#EBECF0] w-full'>
+        <main className='bg-light-body dark:bg-dark-body'>
+            <Hero homeHeroSection={homeHeroSection} />
+
+            <section className='w-screen h-screen  bg-light-body dark:bg-dark-body'>
             </section>
         </main>
     );

@@ -33,7 +33,7 @@ const Header = ({ moodButton, moodImage, isDark }) => {
 
           {/* ------ Mood Changing BUTTON */}
           <button
-            className='w-[40px] h-[40px] bg-primary-color hover:bg-secondary-color rounded-full flex items-center justify-center z-10 mood-button hover:shadow-gray-700 shadow-lg shadow-gray-600 hidden md:block' 
+            className='w-[40px] h-[40px] bg-primary-color hover:bg-secondary-color rounded-full flex items-center justify-center z-10  hover:shadow-gray-700 shadow-lg shadow-gray-600 hidden md:block' 
             onClick={moodButton}
             aria-pressed={isDark}
             aria-label='Toggle dark mode'
@@ -71,7 +71,7 @@ const Header = ({ moodButton, moodImage, isDark }) => {
           </nav>
 
           <button
-              className='w-[40px] h-[40px] bg-primary-color hover:bg-secondary-color rounded-full flex items-center justify-center z-10 mood-button hover:shadow-gray-700 shadow-lg shadow-gray-600 mt-5' 
+              className='w-[40px] h-[40px] bg-primary-color hover:bg-secondary-color rounded-full flex items-center justify-center z-10 hover:shadow-gray-700 shadow-lg shadow-gray-600 mt-5' 
               onClick={moodButton}
               aria-pressed={isDark}
               aria-label='Toggle dark mode'
