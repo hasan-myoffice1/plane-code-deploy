@@ -57,7 +57,34 @@ const homeData = {
         small_title: 'COMMON QUESTIONS',
         section_title: 'Frequently asked questions about our services',
         desc: '',
-    }
+    },
+    commonQuestions: [
+        {
+            id: '1',
+            question: 'How long does it take to build a website?',
+            answer: 'Most websites are completed within 2-8 weeks depending on project size and complexity.',
+        },
+        {
+            id: '2',
+            question: 'Do you provide SEO services?',
+            answer: 'Yes. We offer Technical SEO, Local SEO, On-Page SEO, and complete optimization strategies.',
+        },
+        {
+            id: '3',
+            question: 'Can you redesign my existing website?',
+            answer: 'Absolutely. We modernize outdated websites while improving speed, usability, and search rankings.',
+        },
+        {
+            id: '4',
+            question: 'Do you provide website maintenance?',
+            answer: 'Yes. We offer ongoing updates, security monitoring, backups, and technical support.',
+        },
+        {
+            id: '5',
+            question: 'Which industries do you work with?',
+            answer: 'We work with startups, local businesses, agencies, SaaS companies, healthcare, real estate, legal firms, eCommerce, and many other industries.',
+        },
+    ]
 };
 
 export default homeData;

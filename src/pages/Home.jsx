@@ -5,15 +5,16 @@ import NumberCount from '../components/NumberCount';
 import Card from './../components/Card';
 import { Link } from 'react-router-dom';
 import homeData from '../assets/HomeData';
+import FAQ from '../components/FAQ';
 
 const Home = () => {
-    const { heroSection, aboutSection, servicesSection, stats, serviceCards,testimonialsSection, fqaSection } = homeData;
+    const { heroSection, aboutSection, servicesSection, stats, serviceCards,testimonialsSection, fqaSection, commonQuestions } = homeData;
 
     return (
         <main className='bg-light-body dark:bg-dark-body'>
             <Hero heroSection={heroSection} />
 
-            <section className='container text-dark-body dark:text-light-body'>
+            <section className='container text-dark-text dark:text-light-text'>
                  <TitleAndDesc SectionData={aboutSection} />
                  <div className='flex flex-wrap gap-10 pt-10'>
                     {stats.map((item, index) => (
@@ -39,10 +40,10 @@ const Home = () => {
             </section>
 
             <section>
-                <div className='container dark:text-light-body text-dark-body'>
+                <div className='container dark:text-light-text text-dark-text'>
                     <TitleAndDesc SectionData={testimonialsSection}/>
                     <div className='flex pt-10 md:flex-nowrap flex-wrap gap-10'>
-                        <div className='dark:text-light-body w-max'>
+                        <div className='dark:text-light-text w-max'>
                             <h3 className='text-5xl sm:text-8xl font-bold relative'>4.7/5</h3>
                             <span>⭐⭐⭐⭐⭐</span>
                             <p className='text-balance'>Trusted by businesses across the USA, UK, and Europe for quality web development services.</p>
@@ -65,9 +66,15 @@ const Home = () => {
             </section>
 
             <section className='bg-light-section dark:bg-dark-section'>
-                <div className="container text-dark-body dark:text-light-body">
+                <div className="container text-dark-text dark:text-light-text">
                     <TitleAndDesc SectionData={fqaSection}/>
                     
+                    {
+                        commonQuestions.map(( fqa, index )=>(
+                            <FAQ key={index} fqa_question={fqa.question} fqa_answer={fqa.answer}/>
+                        ))
+                    }
+
                 </div>
             </section>
         </main>

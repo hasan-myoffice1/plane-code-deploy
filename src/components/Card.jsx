@@ -8,7 +8,7 @@ const Card = ({ card_title, card_desc }) => {
             <div>
                 <img src="https://placehold.co/400" className='h-[100px] mb-7' alt="" />
                 <hr  className='w-[60%] border border-secondary-color rounded'/>
-                <p className='my-7'>{card_desc}</p>
+                <p className='my-7 text-light-text'>{card_desc}</p>
             </div>
             <div className='flex justify-between align-middle '>
                 <Link className='text-md text-secondary-color font-semibold'>More details </Link>

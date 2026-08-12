@@ -24,7 +24,7 @@ const NumberCount = ({ end = 100, text = 'Projects Successfully Delivered' }) =>
     }, [end]);
 
     return (
-        <div className='dark:text-light-body max-w-[170px]'>
+        <div className='dark:text-light-text max-w-[170px]'>
             <h3 className='text-5xl sm:text-8xl font-bold relative'>
                 <span>{count}</span>
                 <sup className='text-secondary-color font-medium text-4xl absolute to-15%'>+</sup>
