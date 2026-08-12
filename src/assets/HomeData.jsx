@@ -84,7 +84,41 @@ const homeData = {
             question: 'Which industries do you work with?',
             answer: 'We work with startups, local businesses, agencies, SaaS companies, healthcare, real estate, legal firms, eCommerce, and many other industries.',
         },
-    ]
+    ],
+    processSection: {
+        small_title: 'OUR PROCESS',
+        section_title: 'A transparent development process built around your success',
+        desc: '',
+    },
+    pCards: [
+        {
+            step:'Step 01',
+            card_title: 'Discovery & Strategy',
+            card_desc: 'We understand your business objectives, target audience, project requirements, and technical goals before development begins.'
+        },
+        {
+            step:'Step 02',
+            card_title: 'UI/UX Design',
+            card_desc: 'Our designers create intuitive wireframes and modern interfaces that prioritize usability, accessibility, and brand consistency.'
+        },
+        {
+            step:'Step 03',
+            card_title: 'Development',
+            card_desc: 'Using modern frameworks and clean code practices, we build secure, scalable, and high-performing digital solutions.'
+        },
+        {
+            step:'Step 04',
+            card_title: 'Testing & Launch',
+            card_desc: 'Every project undergoes quality assurance, performance testing, and deployment to ensure a smooth, reliable launch.'
+        },
+        
+    ],
+     expertiseSection: {
+        small_title: 'Our Expertise',
+        section_title: 'Creating high-performance websites that accelerate business growth',
+        desc: 'From corporate websites and custom web applications to eCommerce platforms and enterprise solutions, we deliver digital products designed to perform, convert, and scale with your business.',
+        link_text: 'Explore Services'
+    },
 };
 
 export default homeData;

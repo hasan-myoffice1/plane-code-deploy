@@ -38,7 +38,7 @@ const Header = ({ moodButton, moodImage, isDark }) => {
           <button
             type='button'
             onClick={() => setSidebarOpen(true)}
-            className='text-white md:hidden'
+            className='text-white md:hidden hover:translate-y-1'
           >
             <img src="/mingcute_menu-fill.svg" alt="" />
 
@@ -51,7 +51,7 @@ const Header = ({ moodButton, moodImage, isDark }) => {
           <button
               type='button'
               onClick={() => setSidebarOpen(false)}
-              className='absolute right-4 top-4 text-white'
+              className='absolute right-4 top-4 text-white hover:translate-y-1'
           >
               <img src="/line-md_close.svg" alt="" />
           </button>
@@ -64,7 +64,7 @@ const Header = ({ moodButton, moodImage, isDark }) => {
           </nav>
 
           <button
-              className='w-[40px] h-[40px] bg-primary-color hover:bg-secondary-color rounded-full flex items-center justify-center z-10 hover:shadow-gray-700 shadow-lg shadow-gray-600 mt-5' 
+              className='w-[40px] h-[40px] bg-primary-color hover:bg-secondary-color rounded-full flex items-center justify-center z-10 hover:shadow-gray-700 shadow-lg shadow-gray-600 mt-5 hover:translate-y-1' 
               onClick={moodButton}
               aria-pressed={isDark}
               aria-label='Toggle dark mode'
@@ -73,7 +73,7 @@ const Header = ({ moodButton, moodImage, isDark }) => {
           </button>
       </div>
 
-      <button className='w-[40px] h-[40px] bg-primary-color hover:bg-secondary-color rounded-full flex items-center justify-center z-10  hover:shadow-gray-700 shadow-lg shadow-gray-600 hidden md:block fixed bottom-10 right-10' 
+      <button className='w-[40px] h-[40px] bg-primary-color hover:bg-secondary-color rounded-full flex items-center justify-center z-10  hover:shadow-gray-700 shadow-lg shadow-gray-600 hidden md:block fixed bottom-10 right-10 hover:translate-y-1' 
         onClick={moodButton}
         aria-pressed={isDark}
         aria-label='Toggle dark mode'

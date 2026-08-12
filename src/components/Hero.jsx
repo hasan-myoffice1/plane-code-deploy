@@ -39,8 +39,8 @@ const Hero = (p) => {
                          <p className='text-gray-200 mt-5'>{p.heroSection['hero_desc']}</p>
 
                          {heroButtonText ? (
-                              <button className='mt-4'>
-                                   <Link to='/services' className='button-primary'>{heroButtonText}</Link>
+                              <button className='mt-4 hover:translate-y-1'>
+                                   <Link to='/services' className='button-primary '>{heroButtonText}</Link>
                               </button>
                          ) : null}
                     </div>
