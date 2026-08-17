@@ -1,8 +1,12 @@
 import React from 'react';
 import Hero from '../components/Hero';
+import LastSection from '../components/LastSection';
+import Footer from './../components/Footer';
 
-const About = () => {
 
+const About = ({ isDark }) => {
+ console.log(isDark);
+ 
     const homeHeroSection = {
         hero_section_heading_f:"Building reliable ",
         hero_highlight_text :'digital solutions ',
@@ -19,8 +23,8 @@ const About = () => {
        <main className='bg-light-body dark:bg-dark-body'>
             <Hero heroSection={homeHeroSection} />
 
-            <section className='w-screen h-screen  bg-light-body dark:bg-dark-body'>
-            </section>
+            <LastSection isDark={isDark} />
+            <Footer/>
         </main>
     );
 };

@@ -9,12 +9,13 @@ import FAQ from '../components/FAQ';
 import CenterHeading from './../components/CenterHeading';
 import ProcessCard from '../components/ProcessCard';
 import CTA from '../components/CTA';
-import bgCircle from '../assets/bg-Circel.png';
-import bgCircleBlack from '../assets/bg-Circle-black.png';
 import LastSection from '../components/LastSection';
 import PrimaryButton from '../components/PrimaryButton'
+import Footer from './../components/Footer';
 
 const Home = ({ isDark }) => {
+    console.log(isDark);
+    
     const { heroSection, aboutSection, servicesSection, stats, serviceCards,testimonialsSection, fqaSection, commonQuestions, processSection, pCards, expertiseSection, lastSection } = homeData;
 
     return (
@@ -119,6 +120,7 @@ const Home = ({ isDark }) => {
             </section>
 
             <LastSection isDark={isDark} />
+            <Footer />
 
         </main>
     );

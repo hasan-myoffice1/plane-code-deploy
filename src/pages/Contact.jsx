@@ -1,7 +1,9 @@
 import React from 'react';
 import Hero from '../components/Hero';
+import LastSection from '../components/LastSection';
+import Footer from '../components/Footer';
 
-const Contact = () => {
+const Contact = ({ isDark }) => {
 
     const homeHeroSection = {
         hero_section_heading_f:"Let's ",
@@ -19,8 +21,8 @@ const Contact = () => {
         <main className='bg-light-body dark:bg-dark-body'>
             <Hero heroSection={homeHeroSection} />
 
-            <section className='w-screen h-screen  bg-light-body dark:bg-dark-body'>
-            </section>
+            <LastSection isDark={isDark} />
+            <Footer/>
         </main>
     );
 };
