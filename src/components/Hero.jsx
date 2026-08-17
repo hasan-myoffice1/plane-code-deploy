@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PrimaryButton from './PrimaryButton';
 
 
 const Hero = (p) => {
+     
      const heroButtonText = p?.heroSection?.['hero_button_text'];
      const email = p?.heroSection?.['email'];
      const phone = p?.heroSection?.['phone'];
@@ -36,12 +38,10 @@ const Hero = (p) => {
                               <span className='highlight-text-pri'>{p.heroSection['hero_highlight_text']}</span>
                               {p.heroSection['hero_section_heading_l']}
                          </h1>
-                         <p className='text-gray-200 mt-5'>{p.heroSection['hero_desc']}</p>
+                         <p className='text-gray-200 mt-5'>{p?.heroSection['hero_desc']}</p>
 
                          {heroButtonText ? (
-                              <button className='mt-4 hover:translate-y-1'>
-                                   <Link to='/services' className='button-primary '>{heroButtonText}</Link>
-                              </button>
+                              <PrimaryButton title={heroButtonText} link={p?.heroSection['button_link']}/>
                          ) : null}
                     </div>
                </div>

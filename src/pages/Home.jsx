@@ -11,6 +11,8 @@ import ProcessCard from '../components/ProcessCard';
 import CTA from '../components/CTA';
 import bgCircle from '../assets/bg-Circel.png';
 import bgCircleBlack from '../assets/bg-Circle-black.png';
+import LastSection from '../components/LastSection';
+import PrimaryButton from '../components/PrimaryButton'
 
 const Home = ({ isDark }) => {
     const { heroSection, aboutSection, servicesSection, stats, serviceCards,testimonialsSection, fqaSection, commonQuestions, processSection, pCards, expertiseSection, lastSection } = homeData;
@@ -102,13 +104,13 @@ const Home = ({ isDark }) => {
 
             <section className='h-[80vh] flex bg-no-repeat bg-cover z-0 relative bg-center overflow-hidden' style={{ backgroundImage: `url('/src/assets/aboutPageHero.jpg')`}}>
                 <div className='bg-dark-body/75 z-[-1] w-full h-full absolute to-0% right-0'></div>
-                <div className='w-[100px] h-[100px] absolute top-5 left-100 rotate-45 border-2 border-secondary-color rounded-xl overflow-hidden hover:scale-110'>
+                <div className='w-25 h-25 absolute top-5 left-100 rotate-45 border-2 border-secondary-color rounded-xl overflow-hidden hover:scale-110'>
                     <img src="/src/assets/homepageHero.png" className='w-full h-full object-cover -rotate-45 scale-150' alt="" />
                 </div>
-                <div className='w-[300px] h-[300px] hidden xl:block absolute top-50 right-0 rotate-45 border-2 border-secondary-color rounded-3xl overflow-hidden hover:scale-110 z-0'>
+                <div className='w-75 h-75 hidden xl:block absolute top-50 right-0 rotate-45 border-2 border-secondary-color rounded-3xl overflow-hidden hover:scale-110 z-0'>
                     <img src="/src/assets/aboutPageHero.jpg" className='w-full h-full object-cover -rotate-45 scale-150' alt="" />
                 </div>
-                <div className='w-[100px] h-[100px] absolute  bottom-0 left-40 rotate-45 border-2 border-secondary-color rounded-xl overflow-hidden hover:scale-110'>
+                <div className='w-25 h-25 absolute  bottom-0 left-40 rotate-45 border-2 border-secondary-color rounded-xl overflow-hidden hover:scale-110'>
                     <img src="/src/assets/servicesPageHero.jpg" className='w-full h-full object-cover -rotate-45 scale-150' alt="" />
                 </div>
                 <div className="container z-20 text-gray-50 ">
@@ -116,18 +118,8 @@ const Home = ({ isDark }) => {
                 </div>
             </section>
 
-            <section>
-                <div className="relative container pt-40 z-0  text-gray-800 dark:text-gray-50 ">
-                    <div className='w-full h-full absolute top-0 right-0 flex justify-center -z-1'>
-                        <img
-                            src={isDark ?bgCircleBlack : bgCircle  }
-                            className='w-60 h-60 md:w-80 md:h-80 self-center animate-wiggle'
-                            alt='Decorative background'
-                        />
-                    </div>
-                    <CTA cardData={lastSection}/>
-                </div>
-            </section>
+            <LastSection isDark={isDark} />
+
         </main>
     );
 };

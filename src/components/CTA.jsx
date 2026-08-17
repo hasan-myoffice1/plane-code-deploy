@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PrimaryButton from './PrimaryButton';
 
 const CTA = (e) => {
     return (
@@ -9,7 +10,7 @@ const CTA = (e) => {
                 <span className='text-section-small-heading text-secondary-color uppercase tracking-widest font-semibold'>{e.cardData['small_title']}</span>
                 <h2 className='text-section-heading font-bold  capitalize'>{e.cardData['section_title']}</h2>
                 <p className='my-8'>{e.cardData['desc']}</p>
-                <button className='button-primary hover:translate-y-1'><Link to={e.cardData.link_page}>{e.cardData['link_text']}</Link></button>
+                <PrimaryButton title={e.cardData['link_text']} link={e.cardData.link_page} />
             </div>
         </div>
     );

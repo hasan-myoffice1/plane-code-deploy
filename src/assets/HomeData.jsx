@@ -9,7 +9,8 @@ const homeData = {
         hero_button_text: 'Explore Our Services',
         phone: '+088 16456445246 ',
         email: 'PlanCodeDeploy@gmail.com',
-        hero_bg_uri: '/src/assets/homepageHero.png'
+        hero_bg_uri: '/src/assets/homepageHero.png',
+        button_link:'/services'
     },
 
     aboutSection: {
