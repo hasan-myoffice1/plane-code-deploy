@@ -117,7 +117,8 @@ const homeData = {
         small_title: 'Our Expertise',
         section_title: 'Creating high-performance websites that accelerate business growth',
         desc: 'From corporate websites and custom web applications to eCommerce platforms and enterprise solutions, we deliver digital products designed to perform, convert, and scale with your business.',
-        link_text: 'Explore Services'
+        link_text: 'Explore Services',
+        link_page:"/services"
     },
 };
 

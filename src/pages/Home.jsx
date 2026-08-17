@@ -113,7 +113,9 @@ const Home = () => {
                     <CTA cardData={expertiseSection}/>
                 </div>
             </section>
-            <section className='h-40'></section>
+            <section className=''>
+                
+            </section>
         </main>
     );
 };

@@ -5,9 +5,7 @@ import Services from './pages/Services';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
-
 import Header from './components/Header';
-
 
 function App() {
    
@@ -28,13 +26,11 @@ function App() {
       useEffect(() => {
          localStorage.setItem('theme', isDark ? 'dark' : 'light');
       }, [isDark]);
-   
 
    return (
       <div className={isDark ? 'dark' : ''}>
          <BrowserRouter>
             <Header isDark={isDark} moodButton={moodButton} moodImage={moodImage} />
-
             <Routes>
                <Route path='/' element={<Home />} />
                <Route path='/services' element={<Services />} />
