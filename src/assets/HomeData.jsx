@@ -113,12 +113,19 @@ const homeData = {
         },
         
     ],
-     expertiseSection: {
+    expertiseSection: {
         small_title: 'Our Expertise',
         section_title: 'Creating high-performance websites that accelerate business growth',
         desc: 'From corporate websites and custom web applications to eCommerce platforms and enterprise solutions, we deliver digital products designed to perform, convert, and scale with your business.',
         link_text: 'Explore Services',
         link_page:"/services"
+    },
+    lastSection: {
+        small_title: '',
+        section_title: "Let's Build Something special ",
+        desc: "Whether you're launching a new business, redesigning an existing website, or developing a custom web application, our team is ready to turn your ideas into exceptional digital experiences.",
+        link_text: 'Schedule a Consultation',
+        link_page:"/contact"
     },
 };
 

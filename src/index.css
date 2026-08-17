@@ -29,6 +29,14 @@
     --width-container-max: 1200px;
     /* font family */
     --font-family-primary: "Open Sans", sans-serif;
+
+    --animate-wiggle: wiggle 30s linear infinite;
+
+    @keyframes wiggle {
+        to {
+            transform: rotate(360deg);
+        }
+    }
 }
 
 @layer components { 

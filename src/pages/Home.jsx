@@ -9,9 +9,11 @@ import FAQ from '../components/FAQ';
 import CenterHeading from './../components/CenterHeading';
 import ProcessCard from '../components/ProcessCard';
 import CTA from '../components/CTA';
+import bgCircle from '../assets/bg-Circel.png';
+import bgCircleBlack from '../assets/bg-Circle-black.png';
 
-const Home = () => {
-    const { heroSection, aboutSection, servicesSection, stats, serviceCards,testimonialsSection, fqaSection, commonQuestions, processSection, pCards, expertiseSection } = homeData;
+const Home = ({ isDark }) => {
+    const { heroSection, aboutSection, servicesSection, stats, serviceCards,testimonialsSection, fqaSection, commonQuestions, processSection, pCards, expertiseSection, lastSection } = homeData;
 
     return (
         <main className='bg-light-body dark:bg-dark-body'>
@@ -109,12 +111,22 @@ const Home = () => {
                 <div className='w-[100px] h-[100px] absolute  bottom-0 left-40 rotate-45 border-2 border-secondary-color rounded-xl overflow-hidden hover:scale-110'>
                     <img src="/src/assets/servicesPageHero.jpg" className='w-full h-full object-cover -rotate-45 scale-150' alt="" />
                 </div>
-                <div className="container z-20">
+                <div className="container z-20 text-gray-50 ">
                     <CTA cardData={expertiseSection}/>
                 </div>
             </section>
-            <section className=''>
-                
+
+            <section>
+                <div className="relative container pt-40 z-0  text-gray-800 dark:text-gray-50 ">
+                    <div className='w-full h-full absolute top-0 right-0 flex justify-center -z-1'>
+                        <img
+                            src={isDark ?bgCircleBlack : bgCircle  }
+                            className='w-60 h-60 md:w-80 md:h-80 self-center animate-wiggle'
+                            alt='Decorative background'
+                        />
+                    </div>
+                    <CTA cardData={lastSection}/>
+                </div>
             </section>
         </main>
     );

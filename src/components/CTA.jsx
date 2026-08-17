@@ -7,10 +7,9 @@ const CTA = (e) => {
             <h1></h1>
             <div className='md:w-[70%] xl:w-[60%] w-full text-center mx-auto'>
                 <span className='text-section-small-heading text-secondary-color uppercase tracking-widest font-semibold'>{e.cardData['small_title']}</span>
-                <h2 className='text-section-heading text-gray-800 dark:text-gray-50 font-bold  capitalize'>{e.cardData['section_title']}</h2>
-                <p className='text-dark-text dark:text-light-text my-8'>{e.cardData['desc']}</p>
+                <h2 className='text-section-heading font-bold  capitalize'>{e.cardData['section_title']}</h2>
+                <p className='my-8'>{e.cardData['desc']}</p>
                 <button className='button-primary hover:translate-y-1'><Link to={e.cardData.link_page}>{e.cardData['link_text']}</Link></button>
-                
             </div>
         </div>
     );
