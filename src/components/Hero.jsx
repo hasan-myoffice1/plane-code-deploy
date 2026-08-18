@@ -12,7 +12,7 @@ const Hero = (p) => {
      return (
           <div id='hero' className='bg-no-repeat bg-cover z-0 relative bg-center'  style={{ backgroundImage: `url(${p.heroSection?.hero_bg_uri})` }}>
                <div className='bg-dark-body/75 z-[-1] w-full h-full absolute to-0% right-0'></div>
-               <div className='container z-30 flex flex-col justify-between h-[80vh]'>
+               <div className='max-view z-30 flex flex-col justify-between h-[80vh]'>
                     <div className='text-right'>
 
                          {phone ? (

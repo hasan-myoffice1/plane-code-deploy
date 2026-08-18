@@ -22,7 +22,7 @@ const Home = ({ isDark }) => {
         <main className='bg-light-body dark:bg-dark-body'>
             <Hero heroSection={heroSection} />
 
-            <section className='container text-dark-text dark:text-light-text'>
+            <section className='max-view text-dark-text dark:text-light-text'>
                  <TitleAndDesc SectionData={aboutSection} />
                  <div className='flex flex-wrap gap-10 pt-10'>
                     {stats.map((item, index) => (
@@ -32,7 +32,7 @@ const Home = ({ isDark }) => {
             </section>
 
             <section id='services' className='bg-linear-to-r from-blue-950 to-blue-600'>
-                <div className='container text-light-body'>
+                <div className='max-view text-light-body'>
                     <TitleAndDesc SectionData={servicesSection} />
                     
                     <div className='w-max ml-auto'>
@@ -48,7 +48,7 @@ const Home = ({ isDark }) => {
             </section>
 
             <section>
-                <div className='container dark:text-light-text text-dark-text'>
+                <div className='max-view dark:text-light-text text-dark-text'>
                     <TitleAndDesc SectionData={testimonialsSection}/>
                     <div className='flex pt-10 md:flex-nowrap flex-wrap gap-10'>
                         <div className='dark:text-light-text w-max'>
@@ -78,7 +78,7 @@ const Home = ({ isDark }) => {
             </section>
 
             <section>
-                <div className="container text-dark-text dark:text-light-text">
+                <div className="max-view text-dark-text dark:text-light-text">
                     <CenterHeading SectionData={processSection}/>
                     <div className='grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-10 pt-10'>
                         {pCards.map((card, index) => (
@@ -106,7 +106,7 @@ const Home = ({ isDark }) => {
                 <div className='w-25 h-25 absolute  bottom-0 left-40 rotate-45 border-2 border-secondary-color rounded-xl overflow-hidden hover:scale-110'>
                     <img src="/src/assets/servicesPageHero.jpg" className='w-full h-full object-cover -rotate-45 scale-150' alt="" />
                 </div>
-                <div className="container z-20 text-gray-50 ">
+                <div className="max-view z-20 text-gray-50 ">
                     <CTA cardData={expertiseSection}/>
                 </div>
             </section>

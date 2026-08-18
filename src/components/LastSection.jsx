@@ -10,7 +10,7 @@ const LastSection = ({ isDark }) => {
 
     return (
         <section>
-            <div className="relative container pt-40 z-0  text-gray-800 dark:text-gray-50 ">
+            <div className="relative max-view pt-40 z-0  text-gray-800 dark:text-gray-50 ">
                 <div className='w-full h-full absolute top-0 right-0 flex justify-center -z-1'>
                     <img
                         src={isDark ? bgCircleBlack : bgCircle  }

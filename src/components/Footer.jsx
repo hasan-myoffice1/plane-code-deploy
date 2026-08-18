@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <footer className='bg-gray-900 text-gray-200'>
-            <div className="container">
+            <div className="max-view">
                 <div className="flex flex-wrap items-stretch  justify-between gap-10">
                     <div>
                         <img src="/src/assets/footeroLogo.png" alt=""  className='w-50 mb-5'/>

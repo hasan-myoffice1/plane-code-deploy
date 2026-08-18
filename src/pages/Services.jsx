@@ -18,7 +18,7 @@ const Services = ({ isDark }) => {
         <main className='bg-light-body dark:bg-dark-body'>
             <Hero heroSection={heroSection} />
             <section>
-                <div className="container flex  flex-wrap md:gap-y-30 gap-y-15 justify-between text-dark-text dark:text-light-text">
+                <div className="max-view flex  flex-wrap md:gap-y-30 gap-y-15 justify-between text-dark-text dark:text-light-text">
                     {
                         cardData.map(function(card, index){
                             return (
@@ -39,7 +39,7 @@ const Services = ({ isDark }) => {
             </section>
 
             <section className='bg-linear-to-r from-blue-950 to-blue-600 dark:to-blue-800'>
-                <div className="container">
+                <div className="max-view">
                      <div className='flex flex-wrap justify-center sm:justify-between gap-10 text-light-text'>
                     {stats.map((item, index) => (
                         <NumberCount key={index} end={item.end} text={item.text} />
@@ -52,7 +52,7 @@ const Services = ({ isDark }) => {
                 <FQASection />
             </section>
             <section className='bg-light-section dark:bg-dark-section'>
-                <div className="container">
+                <div className="max-view">
                     <TitleAndDesc SectionData={portfolioSection} />
                     <div className='flex flex-wrap gap-10 dark:text-light-text text-dark-text'>
                         <div className='md:flex-1 rounded-2xl overflow-hidden'><img src="/src/assets/aboutPageHero.jpg" className='w-full h-full' alt="" /></div>

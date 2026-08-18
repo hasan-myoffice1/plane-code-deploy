@@ -6,7 +6,7 @@ import FAQ from './FAQ';
 const FQASection = () => {
     const { fqaSection, commonQuestions } = homeData;
     return (
-        <div className="container text-dark-text dark:text-light-text">
+        <div className="max-view text-dark-text dark:text-light-text">
             <TitleAndDesc SectionData={fqaSection}/>
             
             {

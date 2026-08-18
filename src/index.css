@@ -26,7 +26,7 @@
     --text-section-title: clamp(1.125rem, 1rem + 0.75vw, 1.75rem); 
     --text-card-title: clamp(0.8rem, 0.8rem + 0.5vw, 2rem);
     /* width */
-    --width-container-max: 1200px;
+    --width-container-max: 1300px;
     /* font family */
     --font-family-primary: "Open Sans", sans-serif;
 
@@ -48,7 +48,7 @@
         @apply text-base/8;
     }
 
-    .container {
+    .max-view {
         @apply max-w-[var(--width-container-max)] mx-auto px-4 py-20 m-auto ;
     }
     .button-primary {
