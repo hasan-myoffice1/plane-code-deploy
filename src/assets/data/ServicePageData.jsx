@@ -47,7 +47,14 @@ const ServicePageData = {
             button_link: "/about-SEO",
             list_data: ['Technical SEO Audits','On-Page Optimization','Website Speed Optimization', 'Keyword Strategy', 'Local SEO','Performance Reporting']
         }, 
-    ]
+    ],
+    
+    stats: [
+        { end: 7, text: 'Running  Projects' },
+        { end: 37, text: 'Projects Successfully Delivered' },
+        { end: 9, text: 'Years of Industry Experience' },
+        { end: 12, text: 'Businesses Worldwide Served' }
+    ],
 };
 
 export default ServicePageData;

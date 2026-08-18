@@ -5,10 +5,12 @@ import Footer from '../components/Footer';
 import ServicePageData from '../assets/data/ServicePageData';
 import servicePageCard from '../components/ServicesCard';
 import ServicesCard from './../components/ServicesCard';
+import NumberCount from '../components/NumberCount';
+
 
 const Services = ({ isDark }) => {
 
-     const { heroSection, cardData } = ServicePageData;
+     const { heroSection, cardData, stats } = ServicePageData;
      
     return (
         <main className='bg-light-body dark:bg-dark-body'>
@@ -31,6 +33,16 @@ const Services = ({ isDark }) => {
                             );
                         })
                     }
+                </div>
+            </section>
+
+            <section className='bg-linear-to-r from-blue-950 to-blue-600 dark:to-blue-800'>
+                <div className="container">
+                     <div className='flex flex-wrap justify-center sm:justify-between gap-10 text-light-text'>
+                    {stats.map((item, index) => (
+                        <NumberCount key={index} end={item.end} text={item.text} />
+                    ))}
+                 </div>
                 </div>
             </section>
             
