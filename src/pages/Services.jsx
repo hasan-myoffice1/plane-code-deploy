@@ -6,11 +6,13 @@ import ServicePageData from '../assets/data/ServicePageData';
 import servicePageCard from '../components/ServicesCard';
 import ServicesCard from './../components/ServicesCard';
 import NumberCount from '../components/NumberCount';
+import FQASection from '../components/FQASection';
+import TitleAndDesc from '../components/TitleAndDesc';
 
 
 const Services = ({ isDark }) => {
 
-     const { heroSection, cardData, stats } = ServicePageData;
+     const { heroSection, cardData, stats, portfolioSection } = ServicePageData;
      
     return (
         <main className='bg-light-body dark:bg-dark-body'>
@@ -46,6 +48,21 @@ const Services = ({ isDark }) => {
                 </div>
             </section>
             
+            <section>
+                <FQASection />
+            </section>
+            <section className='bg-light-section dark:bg-dark-section'>
+                <div className="container">
+                    <TitleAndDesc SectionData={portfolioSection} />
+                    <div className='flex flex-wrap gap-10 dark:text-light-text text-dark-text'>
+                        <div className='md:flex-1 rounded-2xl overflow-hidden'><img src="/src/assets/aboutPageHero.jpg" className='w-full h-full' alt="" /></div>
+                        <div className='md:flex-1'>
+                            <h3 className='text-2xl font-bold mb-5'>Professional Business Website</h3>
+                            <p>We designed and developed a modern, conversion-focused business website featuring responsive design, SEO optimization, fast performance, and an intuitive user experience that helps generate more leads and strengthen the client's online presence.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <LastSection isDark={isDark} />
             <Footer/>
         </main>

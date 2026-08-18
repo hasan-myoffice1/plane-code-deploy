@@ -12,9 +12,9 @@ import CTA from '../components/CTA';
 import LastSection from '../components/LastSection';
 import PrimaryButton from '../components/PrimaryButton'
 import Footer from './../components/Footer';
+import FQASection from '../components/FQASection';
 
 const Home = ({ isDark }) => {
-    console.log(isDark);
     
     const { heroSection, aboutSection, servicesSection, stats, serviceCards,testimonialsSection, fqaSection, commonQuestions, processSection, pCards, expertiseSection, lastSection } = homeData;
 
@@ -74,15 +74,7 @@ const Home = ({ isDark }) => {
             </section>
 
             <section className='bg-light-section dark:bg-dark-section'>
-                <div className="container text-dark-text dark:text-light-text">
-                    <TitleAndDesc SectionData={fqaSection}/>
-                    
-                    {
-                        commonQuestions.map(( fqa, index )=>(
-                            <FAQ key={index} fqa_question={fqa.question} fqa_answer={fqa.answer}/>
-                        ))
-                    }
-                </div>
+                <FQASection />
             </section>
 
             <section>

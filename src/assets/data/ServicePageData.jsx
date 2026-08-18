@@ -55,6 +55,11 @@ const ServicePageData = {
         { end: 9, text: 'Years of Industry Experience' },
         { end: 12, text: 'Businesses Worldwide Served' }
     ],
+    portfolioSection: {
+        small_title: 'OUR PORTFOLIO',
+        section_title: "we've built for growing businesses",
+        desc: '',
+    },
 };
 
 export default ServicePageData;
