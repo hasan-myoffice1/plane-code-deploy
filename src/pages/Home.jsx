@@ -4,7 +4,7 @@ import TitleAndDesc from '../components/TitleAndDesc';
 import NumberCount from '../components/NumberCount';
 import Card from './../components/Card';
 import { Link } from 'react-router-dom';
-import homeData from '../assets/HomeData';
+import homeData from '../assets/data/HomeData';
 import FAQ from '../components/FAQ';
 import CenterHeading from './../components/CenterHeading';
 import ProcessCard from '../components/ProcessCard';

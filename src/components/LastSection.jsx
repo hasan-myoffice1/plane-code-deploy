@@ -1,5 +1,5 @@
 import React from 'react';
-import homeData from '../assets/HomeData';
+import homeData from '../assets/data/HomeData';
 import CTA from './CTA';
 import bgCircle from '../assets/bg-Circel.png';
 import bgCircleBlack from '../assets/bg-Circle-black.png';
