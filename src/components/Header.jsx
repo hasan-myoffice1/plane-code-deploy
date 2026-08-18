@@ -12,6 +12,13 @@ const Header = ({ moodButton, moodImage, isDark }) => {
     ].filter(Boolean).join(' ');
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   const [sidebarOpen, setSidebarOpen] = useState(false); //------------------ for Side navbar 
  
   return (
@@ -29,10 +36,17 @@ const Header = ({ moodButton, moodImage, isDark }) => {
         </div>
 
         <div className='flex items-center gap-4'>
-          <button className='button-primary hidden md:block'>Free Quote</button>
 
           {/* ------ Mood Changing BUTTON */}
-          
+          <button className='w-10 h-10 bg-dark-body dark:bg-light-body border border-primary-color hover:border-secondary-color rounded-full items-center justify-center z-10  hover:shadow-gray-700 shadow-lg shadow-gray-600 hidden md:block hover:translate-y-1' 
+            onClick={moodButton}
+            aria-pressed={isDark}
+            aria-label='Toggle dark mode'
+            type='button'>
+              <img src={moodImage || '/solar_moon-line-duotone.svg'} alt='theme icon' className='m-auto' />
+          </button>
+
+          <button className='button-primary hidden md:block'>Free Quote</button>
           
           {/* ---- Sidebar Menu Button */}
           <button
@@ -72,13 +86,15 @@ const Header = ({ moodButton, moodImage, isDark }) => {
               <img src={moodImage || '/solar_moon-line-duotone.svg'} alt='theme icon' className='m-auto' />
           </button>
       </div>
-
-      <button className='w-10 h-10 bg-primary-color hover:bg-secondary-color rounded-full items-center justify-center z-10  hover:shadow-gray-700 shadow-lg shadow-gray-600 hidden md:block fixed bottom-10 right-10 hover:translate-y-1' 
-        onClick={moodButton}
-        aria-pressed={isDark}
-        aria-label='Toggle dark mode'
-        type='button'>
-          <img src={moodImage || '/solar_moon-line-duotone.svg'} alt='theme icon' className='m-auto' />
+      
+      {/* ---------------------  Top Up Button */}
+      <button
+        className='w-7 h-10 border-2 border-primary-color hover:border-secondary-color rounded-full items-center justify-center z-10 hover:shadow-gray-700 shadow-lg shadow-gray-600 hidden md:block hover:translate-y-1 animate-bounce fixed bottom-10 right-10'
+        type='button'
+        onClick={scrollToTop}
+        aria-label='Scroll to top'
+      >
+        <span className='text-xl text-primary-color'>↑</span>
       </button>
       
     </header>
