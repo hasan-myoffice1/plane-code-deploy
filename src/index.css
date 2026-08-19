@@ -49,7 +49,7 @@
     }
 
     .max-view {
-        @apply max-w-[var(--width-container-max)] mx-auto px-4 py-20 m-auto ;
+        @apply max-w-[var(--width-container-max)] mx-auto px-6 py-20 m-auto ;
     }
     .button-primary {
         @apply  text-amber-50 bg-primary-color dark:bg-third-color px-7 py-3 rounded-full border-b-2 border-gray-200 hover:bg-secondary-color hover:shadow-md transition-all hover:translate-y-1;
@@ -63,6 +63,10 @@
     }
     .active {
         @apply text-green-500 border-b-2 border-green-500 font-medium transition-all;
+    }
+
+    .input-field{
+        @apply bg-gray-300 rounded-xl p-2 mb-5 mt-2;
     }
 }
 

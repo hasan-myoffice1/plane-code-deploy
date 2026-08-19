@@ -38,7 +38,7 @@ const Header = ({ moodButton, moodImage, isDark }) => {
         <div className='flex items-center gap-4'>
 
           {/* ------ Mood Changing BUTTON */}
-          <button className='w-10 h-10 bg-dark-body dark:bg-light-body border border-primary-color hover:border-secondary-color rounded-full items-center justify-center z-10  hover:shadow-gray-700 shadow-lg shadow-gray-600 hidden md:block hover:translate-y-1' 
+          <button className='w-10 h-10 bg-dark-body dark:bg-gray-300 border border-primary-color hover:border-secondary-color rounded-full items-center justify-center z-10  hover:shadow-gray-700 shadow-lg shadow-gray-600 hidden md:block hover:translate-y-1' 
             onClick={moodButton}
             aria-pressed={isDark}
             aria-label='Toggle dark mode'
