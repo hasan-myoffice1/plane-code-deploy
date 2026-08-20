@@ -9,7 +9,7 @@ const CenterHeading = (p) => {
             <p className='text-dark-text dark:text-light-text  mt-5'>{p.SectionData['desc']}</p>
         </div>
       
-    );
+    );  
 };
 
 export default CenterHeading;

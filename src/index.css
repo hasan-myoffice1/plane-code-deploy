@@ -66,10 +66,12 @@
     }
 
     .input-field{
-        @apply bg-gray-300 rounded-xl p-2 mb-5 mt-2;
+        @apply bg-gray-300 rounded-xl p-2 mb-5 mt-2 text-gray-800 px-4;
     }
+    
 }
 
 #services h2{
     color: var(--color-light-text);
 } 
+

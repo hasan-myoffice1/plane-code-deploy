@@ -6,6 +6,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 import Header from './components/Header';
+import WebDevelopment from './pages/WebDevelopment';
 
 function App() {
    
@@ -37,10 +38,11 @@ function App() {
                <Route path='/about' element={<About isDark={isDark} />} />
                <Route path='/contact' element={<Contact isDark={isDark} />} />
                <Route path='*' element={<NotFound />} />
+               <Route path='/service/web-development' element={<WebDevelopment isDark={isDark}/>}/>
             </Routes>
          </BrowserRouter>
       </div>
    )
 }
-
+   
 export default App

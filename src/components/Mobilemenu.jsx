@@ -38,7 +38,7 @@ const MobileMenu = ({ moodButton, moodImage, isDark }) => {
                     <NavLink to='/contact' className={navLinkClass}>Contact</NavLink>
                 </nav>
                 <button
-                    className='w-[40px] h-[40px] bg-primary-color hover:bg-secondary-color rounded-full flex items-center justify-center z-10 mood-button hover:shadow-gray-700 shadow-lg shadow-gray-600' 
+                    className='w-10 h-10 bg-primary-color hover:bg-secondary-color rounded-full flex items-center justify-center z-10 mood-button hover:shadow-gray-700 shadow-lg shadow-gray-600' 
                     onClick={moodButton}
                     aria-pressed={isDark}
                     aria-label='Toggle dark mode'

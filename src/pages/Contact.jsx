@@ -22,7 +22,7 @@ const Contact = ({ isDark }) => {
             <Hero heroSection={homeHeroSection} />
 
             <section className='dark:text-light-body md:pt-20'>
-                <div className="max-view flex flex-wrap bg-light-section md:p-15 rounded-2xl">
+                <div className="max-view flex flex-wrap bg-light-section dark:bg-dark-section md:p-15 rounded-2xl">
                     <div className='pr-5 self-center md:flex-1'>
                         <img src="/src/assets/Logo.png" alt="" />
                         <h4 className='text-2xl font-bold'>Send Us a Message.</h4>

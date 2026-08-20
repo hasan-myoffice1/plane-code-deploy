@@ -28,6 +28,38 @@ const AboutCompany = {
         section_title: 'What our clients say about us',
         desc: 'Businesses choose PlanCodeDeploy because we deliver reliable solutions, transparent communication, and websites that generate real business value. Our commitment to quality has earned the trust of companies across multiple industries.',
     },
+    workingProcessSection: {
+        small_title: 'process',
+        section_title: 'Our Working Process',
+        desc: 'A structured development process that ensures every project is delivered on time, within budget, and to the highest quality standards.',
+    },
+    processCard : [
+        {
+            step: "01",
+            title:"Discovery & Consultation",
+            desc: "We begin by understanding your business, objectives, target audience, and technical requirements to build a clear project roadmap.",
+        },
+        {
+            step: "02",
+            title:"Strategy & Planning ",
+            desc: "Our team defines the website architecture, user journey, technology stack, and development strategy to ensure scalability and future growth.",
+        },
+        {
+            step: "03",
+            title:"UI/UX Design",
+            desc: "We create engaging interfaces and intuitive user experiences that reflect your brand while improving usability and customer engagement.",
+        },
+        {
+            step: "04",
+            title:"Development & Quality Assurance ",
+            desc: "Our developers build clean, secure, and responsive websites while performing continuous testing for performance, compatibility, and security.",
+        },
+        {
+            step: "05",
+            title:"Launch & Ongoing Support",
+            desc: "After deployment, we provide continuous maintenance, updates, optimization, and technical support to keep your website performing at its best.",
+        },
+    ]
 }
 
 export default AboutCompany;

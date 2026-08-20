@@ -5,11 +5,14 @@ import Footer from './../components/Footer';
 import TitleAndDesc from './../components/TitleAndDesc';
 import AboutCompany from '../assets/data/AboutCompany';
 import NumberCount from './../components/NumberCount';
+import AboutPageProcCard from './../components/AboutPageProcCard';
 
 
 const About = ({ isDark }) => {
 
-    const {HeroSection, aboutCompany, stats, testimonialsSection} = AboutCompany; 
+    const {HeroSection, aboutCompany, stats, testimonialsSection, workingProcessSection, processCard} = AboutCompany; 
+    console.log(processCard);
+    
 
     return (
        <main className='bg-light-body dark:bg-dark-body'>
@@ -38,6 +41,21 @@ const About = ({ isDark }) => {
                 </div>
             </section>
 
+            <section>
+                <div className="max-view">
+                    <div className='max-w-3xl m-auto text-center'>
+                        <TitleAndDesc SectionData={workingProcessSection}/>
+                    </div>
+
+                    <div className='flex flex-wrap justify-around'>
+                        {processCard.map((x, index)=>{
+                        return  <AboutPageProcCard key={index} title={x.title} step={x.step} desc={x.desc}/>
+                    })}
+                    </div>
+                   
+                </div>
+            </section>
+
             <section className='bg-light-section dark:bg-dark-section'>
                 <div className='max-view dark:text-light-text text-dark-text'>
                     <TitleAndDesc SectionData={testimonialsSection}/>
@@ -60,7 +78,8 @@ const About = ({ isDark }) => {
             </section>
 
             <LastSection isDark={isDark} />
-            <Footer/>
+ 
+           <Footer/>
         </main>
     );
 };
